@@ -1,0 +1,102 @@
+.circle {
+  border-radius: 50%;
+  width: 16px;
+  height: 16px;
+  background:#fbc747;
+  &.blue {
+    background: #67bee4;
+  }
+  /* width and height can be anything, as long as they're equal */
+}
+
+body {
+  .bar {
+    height: 120px;
+    .bar-stable {
+      background: #007aff;
+
+    }
+  }
+
+  .title {
+    table {
+
+      td {
+        padding: 10px;
+        vertical-align: middle;
+        div, p {
+          float: left;
+          margin: 5px;
+        }
+       &.td3 {
+         .circle {
+           background: #67bee4;
+         }
+       }
+      }
+    }
+  }
+
+  .list {
+    table.outer {
+      thead {
+        background: #f1f6f9;
+        th {
+          padding: 10px 5px;
+          font-weight: bold;
+          color: #82909d;
+          font-size: 15pt;
+
+        }
+      }
+      width: 100%;
+      tr {
+        td {
+          &.td1 {
+            img {
+              width: 50px;
+            }
+          }
+          color: #7b7c7d;
+          font-size: 13pt;
+          font-weight: bold;
+          padding: 10px;
+          vertical-align: middle;
+          text-align: center;
+          div, p {
+            float: left;
+            margin: 5px;
+          }
+        }
+      }
+
+      tr:nth-child(2n) {
+        background: #f7fbfc;
+      }
+
+      table {
+        margin-left: 30px;
+        tr {
+
+          td {
+            padding: 0;
+          }
+        }
+
+        tr:nth-child(2n) {
+          background: transparent;
+        }
+      }
+    }
+  }
+
+  .has-header {
+    top: 150px;
+  }
+}
+
+[nav-bar-transition="ios"] [nav-bar="active"] .bar, [nav-bar-transition="ios"] [nav-bar="entering"] .bar {
+  background: #007aff url("../img/logo.png") no-repeat center center;
+  background-size: 200px 50px;
+
+}
