@@ -28,13 +28,15 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
         }
     })
 
-    .config(function ($stateProvider, $urlRouterProvider, $httpProvider) {
+    .config(function ($stateProvider, $urlRouterProvider, $httpProvider, $ionicConfigProvider) {
 
         //$httpProvider.defaults.useXDomain = true;
         //delete $httpProvider.defaults.headers.common['X-Requested-With'];
         $httpProvider.defaults.xsrfHeaderName = 'X-CSRFToken';
         $httpProvider.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest';
-
+        $ionicConfigProvider.backButton.previousTitleText(false);
+        //$ionicConfigProvider.backButton.text('');
+        $ionicConfigProvider.backButton.text('').icon('').previousTitleText(false);
         $stateProvider
 
             .state('app', {
@@ -56,10 +58,11 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
             })
 
             .state('app.huihuos', {
-                url: '/huihuos',
+                url: '/projects/:projectId/huihuos',
                 views: {
                     'menuContent': {
-                        templateUrl: 'templates/huihuos.html'
+                        templateUrl: 'templates/huihuos.html',
+                        controller: 'HuihuoCtrl'
                     }
                 }
             })

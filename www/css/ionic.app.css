@@ -7693,6 +7693,12 @@ a.button {
   -webkit-transition-duration: 0s;
   transition-duration: 0s; }
 
+.blue {
+  color: #1995d3; }
+
+.red {
+  color: red; }
+
 .circle {
   border-radius: 50%;
   width: 16px;
@@ -7702,10 +7708,13 @@ a.button {
   .circle.blue {
     background: #67bee4; }
 
+body .bar .button.back-button {
+  min-height: 100px;
+  margin-top: 14px; }
 body .bar {
-  height: 120px; }
+  height: 130px; }
   body .bar .bar-stable {
-    background: #007aff; }
+    background: #0093d6; }
 body .title table td {
   padding: 10px;
   vertical-align: middle; }
@@ -7723,6 +7732,8 @@ body .list table.outer {
       font-weight: bold;
       color: #82909d;
       font-size: 15pt; }
+      body .list table.outer thead th span {
+        font-size: 10pt; }
   body .list table.outer tr td {
     color: #7b7c7d;
     font-size: 13pt;
@@ -7731,10 +7742,24 @@ body .list table.outer {
     vertical-align: middle;
     text-align: center; }
     body .list table.outer tr td.td1 img {
-      width: 50px; }
+      width: 50px;
+      margin-top: 10px; }
     body .list table.outer tr td div, body .list table.outer tr td p {
       float: left;
       margin: 5px; }
+    body .list table.outer tr td .progress {
+      width: 150px;
+      background: #DDD; }
+      body .list table.outer tr td .progress div {
+        margin: 0;
+        transition: width 0.1s;
+        height: 20px; }
+        body .list table.outer tr td .progress div.green {
+          background: #27b620; }
+        body .list table.outer tr td .progress div.zi {
+          background: #6119b6; }
+        body .list table.outer tr td .progress div.yellow {
+          background: #fba82a; }
   body .list table.outer tr:nth-child(2n) {
     background: #f7fbfc; }
   body .list table.outer table {
@@ -7747,5 +7772,5 @@ body .has-header {
   top: 150px; }
 
 [nav-bar-transition="ios"] [nav-bar="active"] .bar, [nav-bar-transition="ios"] [nav-bar="entering"] .bar {
-  background: #007aff url("../img/logo.png") no-repeat center center;
-  background-size: 200px 50px; }
+  background: #0093d6 url("../img/logo.png") no-repeat center center;
+  background-size: 300px 80px; }
