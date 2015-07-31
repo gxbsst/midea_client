@@ -61,6 +61,30 @@ body {
           span {
             font-size: 10pt;
           }
+          &.th1 {
+            width: 15%;
+          }
+          &.th2 {
+            width: 10%;
+          }
+          &.th3 {
+            width: 10%;
+          }
+          &.th4 {
+            width: 13%;
+          }
+          &.th5 {
+            width: 13%;
+          }
+          &.th6 {
+            width: 13%;
+          }
+          &.th7 {
+            width: 15%;
+          }
+          &.th8 {
+            width: 10%;
+          }
         }
       }
       width: 100%;
@@ -73,7 +97,7 @@ body {
             }
           }
           color: #7b7c7d;
-          font-size: 13pt;
+          font-size: 12pt;
           font-weight: bold;
           padding: 10px;
           vertical-align: middle;
@@ -85,6 +109,7 @@ body {
           .progress {
             width: 150px;
             background: #DDD;
+
             div {
               margin: 0;
               transition: width 0.1s;
